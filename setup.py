@@ -3,7 +3,7 @@ from setuptools import setup, find_packages
 
 setup(
     name='disabledoc',
-    version='0.1',
+    version='0.2',
     description="",
     long_description="""""",
     author='Nat Williams, Kumar McMillan',
@@ -16,6 +16,7 @@ setup(
     entry_points="""
        [nose.plugins.0.10]
        disabledoc = disabledoc.plugin:DisableDocstring
+       enablepydoc = disabledoc.plugin:EnablePydocstring
        """,
     classifiers=[
         'Intended Audience :: Developers',
